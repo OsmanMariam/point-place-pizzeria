@@ -10,7 +10,7 @@ This is website application that allows a user to order pizzas online and choose
 
 
 ## Technologies Used
-I this project, HTML was used to develop the basic structure of thye page.CSS was later used to to style the page and make it more appealing by adding elements such as images and color,and also by neatly arranging the text in the page. Additional stylying using bootstrap was also incorporated.The functionality of the website application was all achieved using javascript.
+I this project, HTML was used to develop the basic structure of thye page.CSS was later used to to style the page and make it more appealing by adding elements such as images and color,and also by neatly arranging the text in the page. Additional stylying using bootstrap was also incorporated.The functionality of the website application was all achieved using javascript.The readme file was written using markdown.
 ## Support and contact details
 This is is an open source code therefore ideas and corrections are welcomed by contacting the email sufimariam8@gmail.com .
 ### License
