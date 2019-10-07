@@ -10,10 +10,10 @@ This is website application that allows a user to order pizzas online and choose
 
 
 ## Technologies Used
-*HTML.
-*Bootstrap.
-*Javascript/JQuery.
-*Markdown.
+* HTML.
+* Bootstrap.
+* Javascript/JQuery.
+* Markdown.
 ## Support and contact details
 This is is an open source code therefore ideas and corrections are welcomed by contacting the email sufimariam8@gmail.com .
 ### License
