@@ -3,9 +3,16 @@
   background-size: cover;
 }
 
+.container-fluid {
+  margin: 0 auto;
+  width: 960px;
+}
 
-
-
+.whatwedo img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
 
 
 
