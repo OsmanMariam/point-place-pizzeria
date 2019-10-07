@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha384-mlceH9HlqLp7GMKHrj5Ara1+LvdTZVMx4S1U43/NxCvAkzIo8WJ0FE7duLel3wVo="
+        crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="main">
+            <h1>Point Place Pizzeria</h1>
+            <p>Serving great pizzas and keeping the oven hot!</p>
+        </div>
+
+        <section>
+            <p>Place your order below</p><br><br>
+        </section>
+
+        <form id="new-pizza">
+            <section class="pizza-size">
+                <h3>Choose your size</h3>
+                <form>
+                    <div class="size">
+                        <input type="radio" name="Medium" value=850>Medium<br>
+                        <input type="radio" name="Large" value=1000>Large<br>
+                        <input type="radio" name="Grande" value=1250>Grande<br>
+                    </div>
+
+                </form>
+            </section><br>
+
+            <section class="pizza-crust">
+                <h3>Choose the type of crust you'd prefer.</h3>
+                <form>
+                    <div id="crusts">
+                        <input type="radio" name="thin-crust" value=100>Thin crust<br>
+                        <input type="radio" name="thick-crust" value=100>Thick crust<br>
+                        <input type="radio" name="flatbread-crust" value=250>Flatbread crust<br>
+                        <input type="radio" name="foccacia" value=300>Foccacia<br>
+                        <input type="radio" name="cheese-stuffed crust" value=350>Cheese Stuffed crust<br>
+                    </div>
+
+                </form>
+            </section><br>
+
+            <section class="toppings">
+                <h3>Choose as many toppings as you'd like!</h3>
+                <form>
+                    <div class="toppings">
+                        <input type="checkbox" name="topping1" value=Pepperoni>Pepperoni<br>
+                        <input type="checkbox" name="topping2" value=Meatball>Meatball<br>
+                        <input type="checkbox" name="topping3" value=Bacon>Bacon<br>
+                        <input type="checkbox" name="topping4" value=Pineapple>Pineapple<br>
+                        <input type="checkbox" name="topping5" value=Ham>Ham<br>
+                        <input type="checkbox" name="topping6" value=Olives>Olives<br>
+                        <input type="checkbox" name="topping7" value=Mushrooms>Mushrooms<br>
+                        <input type="checkbox" name="topping8" value=Extra-cheese>Extra cheese<br>
+
+                    </div>
+                </form>
+            </section><br>
+            <button type="submit" class="btn">Checkout</button>
+        </form>
+        <div class="col-md-6">
+            <div id="show-order">
+                <h2></h2>
+                <p>Size:<span class="pizza-size"></span></p>
+                <p>Crust:<span class="pizza-crust"></span></p>
+                <p>Toppings:<span class="toppings"></span></p>
+
+                <p>Orders</p>
+                <ul id="orders"></ul>
+
+            </div>
+
+    </div>
+</body>
+
+</html>
