@@ -2,88 +2,164 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
-    <link href="css/styles.css" rel="stylesheet" type="text/css">
-    <script src="https://code.jquery.com/jquery-3.4.1.js"
-        integrity="sha384-mlceH9HlqLp7GMKHrj5Ara1+LvdTZVMx4S1U43/NxCvAkzIo8WJ0FE7duLel3wVo="
-        crossorigin="anonymous"></script>
-    <script src="js/script.js"></script>
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Osman pizza</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css?family=Pacifico|Oswald" rel="stylesheet">
 </head>
 
 <body>
+  <div class="row right" >
 
-    <div class="container">
-        <div class="main">
-            <h1>Point Place Pizzeria</h1>
-            <p>Serving great pizzas and keeping the oven hot!</p>
+<div class="col-md-6">
+  <div class="container-fluid">
+    <div class="jumbotron" style="background-color:orange !important">
+
+      <div class="page-header ">
+        <h1 class="display-1">Point Place Pizzeria</h1>
+      </div>
+
+
+
+      <div class="whatwedo">
+        <h1 class="pacifico"> Serving great pizzas and keeping the oven hot! <br><br>Place an order below!</h1>
+
+        <br>
+        <br>
+        <br>
+        <div class="row">
+          <div class="col-md-4 col-sm-12">
+
+            <img class='one' style="width:40%;height:20%"  align="middle" src="https://images.unsplash.com/photo-1548369978-75d7e3e7e96c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="Design" id="aboutUs">
+            <br>
+            <br>
+            <h3 class="one">Pizza</h3>
+            <br>
+            <p class="one">For the best Pizza in Town</p>
+            <select class="form-control size">
+              <option label="Small" value="500">Medium</option>
+              <option label="Medium" value="700">Large</option>
+              <option label="Large" value="1000">Grande</option>
+            </select>
+          </div>
+          <div class="col-md-4 col-sm-12">
+            <img class='two' style="width:40%;height:20%" align="middle" src="https://images.unsplash.com/photo-1490717064594-3bd2c4081693?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="Development">
+            <br>
+            <br>
+            <h3 class="two">Toppings</h3>
+            <br>
+            <p class='two'> We know pizza is awesome but our high quality toppings will definetely take your
+              pizza to the next level.</p>
+
+
+            <select class="form-control toppings">
+              <option label="Olives" value="200">Olives</option>
+              <option label="Cheese" value="150">Cheese</option>
+              <option label="Pepperoni" value="150">Pinapples</option>
+              <option label="Pepperoni" value="100">Pepperoni</option>
+              <option label="Pepperoni" value="180">Mushrooms</option>
+              <option label="Pepperoni" value="100">Spinach</option>
+              <option label="Pepperoni" value="150">Prima sausage</option>
+            </select>
+
+          </div>
+          <div class="col-md-4 col-sm-12">
+            <img class='three' align="middle"style="width:40%;height:20%"  src="https://images.unsplash.com/photo-1560433684-6dc95b4c00c2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="Product">
+            <br>
+            <br>
+            <h3 class="three">Crust</h3>
+            <br>
+            <p class='three'>Select a crust of your choice .</p>
+
+            <select class="form-control crust">
+              <option label=" Cheese-Stuffed" value="500"> Cheese-Stuffed</option>
+              <option label="Gluten-Free" value="200">Gluten-Free</option>
+              <option label="Crispy" value="300">Crispy</option>
+              <option label="Foccacia" value="300">Foccacia</option>
+            </select>
+
+          </div>
         </div>
+      </div>
 
-        <section>
-            <p>Place your order below</p><br><br>
-        </section>
+      <br>
+      <div class="text-center" >
+        <button class="btn btn-info order" type="submit" style="color:red;">Order</button>
+      </div>
+      <br>
 
-        <form id="new-pizza">
-            <section class="pizza-size">
-                <h3>Choose your size</h3>
-                <form>
-                    <div class="size">
-                        <input type="radio" name="Medium" value=850>Medium<br>
-                        <input type="radio" name="Large" value=1000>Large<br>
-                        <input type="radio" name="Grande" value=1250>Grande<br>
-                    </div>
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">Order No.</th>
+            <th scope="col">Pizza Size</th>
+            <th scope="col">Toppings</th>
+            <th scope="col">Crust</th>
+            <th scope="col">Total</th>
+          </tr>
+        </thead>
+        <tbody id="pizza">
+          <tr>
+            <th scope="row">1</th>
+            <td id="size"></td>
+            <td id="toppings"></td>
+            <td id="crust"></td>
+            <td id="total"></td>
+          </tr>
+        </tbody>
+      </table>
 
-                </form>
-            </section><br>
-
-            <section class="pizza-crust">
-                <h3>Choose the type of crust you'd prefer.</h3>
-                <form>
-                    <div id="crusts">
-                        <input type="radio" name="thin-crust" value=100>Thin crust<br>
-                        <input type="radio" name="thick-crust" value=100>Thick crust<br>
-                        <input type="radio" name="flatbread-crust" value=250>Flatbread crust<br>
-                        <input type="radio" name="foccacia" value=300>Foccacia<br>
-                        <input type="radio" name="cheese-stuffed crust" value=350>Cheese Stuffed crust<br>
-                    </div>
-
-                </form>
-            </section><br>
-
-            <section class="toppings">
-                <h3>Choose as many toppings as you'd like!</h3>
-                <form>
-                    <div class="toppings">
-                        <input type="checkbox" name="topping1" value=Pepperoni>Pepperoni<br>
-                        <input type="checkbox" name="topping2" value=Meatball>Meatball<br>
-                        <input type="checkbox" name="topping3" value=Bacon>Bacon<br>
-                        <input type="checkbox" name="topping4" value=Pineapple>Pineapple<br>
-                        <input type="checkbox" name="topping5" value=Ham>Ham<br>
-                        <input type="checkbox" name="topping6" value=Olives>Olives<br>
-                        <input type="checkbox" name="topping7" value=Mushrooms>Mushrooms<br>
-                        <input type="checkbox" name="topping8" value=Extra-cheese>Extra cheese<br>
-
-                    </div>
-                </form>
-            </section><br>
-            <button type="submit" class="btn">Checkout</button>
-        </form>
-        <div class="col-md-6">
-            <div id="show-order">
-                <h2></h2>
-                <p>Size:<span class="pizza-size"></span></p>
-                <p>Crust:<span class="pizza-crust"></span></p>
-                <p>Toppings:<span class="toppings"></span></p>
-
-                <p>Orders</p>
-                <ul id="orders"></ul>
-
+      <div class="additional-buttons">
+        <div class="text-center">
+          <button class="btn btn-info add-pizza" type="submit">Add Another</button>
+          <div class="additional-info">
+            <h3>The total is: <span></span></h3>
+            <h5>Would you like it to be delivered for an additional <em>200</em>?</h5>
+            <h4>Order received, We are sending our drivers to <span></span></h4>
+            <div class="location text-center">
+              <input type="text" size="30" placeholder="Where do you live?" required />
+              <button class="btn btn-info complete" type="submit">Complete</button>
             </div>
+          </div>
+          <br>
+          <button class="btn btn-info yes" type="submit">Yes</button>
+          <button class="btn btn-info no" type="submit">No</button>
+        </div>
+        <div class="text-right">
+          <button class="btn btn-info check-out" type="submit">Checkout</button>
+        </div>
+      </div>
+      <div class="text-center">
+        <address id="contact">
+          <strong> Pizza Order </strong><br>
+          Ruaraka, Ruaraka Plaza<br>
+        <br>
+        </address>
 
+        <address>
+          <strong>Customer Care</strong><br>
+          <a href="Mariam Osman">Mariam Osman</a>
+        </address>
+      </div>
     </div>
+
+
+
+
+  </div>
+
+</div>
+  </div>
+
+
+
+
+  <script src="js/jquery-3.4.1.js"></script>
+  <script src="js/script.js"></script>
 </body>
 
 </html>

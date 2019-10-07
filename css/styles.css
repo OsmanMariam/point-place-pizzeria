@@ -1,27 +1,60 @@
-/*.walrus-showing{
-    display:none;
-}
-.clickable{
-    cursor:pointer;
-    color:#0088cc;
-}
-.clickable:hover{
-    text-decoration:underline;
+.right {
+  background-image: url("https://images.unsplash.com/photo-1516697073-419b2bd079db?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60");
+  background-size: cover;
 }
 
+.container-fluid {
+  margin: 0 auto;
+  width: 960px;
+}
 
-.green-background {
-    background-color: green;
+.whatwedo img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
+h1, h3 {
+  text-align: center;
+}
+
+.pacifico {
+  font-family: 'Pacifico', cursive;
+}
+
+.col-md-4.col-sm-12 {
+  text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+  .container-fluid {
+    width: 100%;
   }
 
-  .yellow-background {
-    background-color: yellow;
+  .display-1 {
+    font-size: 2.5rem;
   }
+}
 
-  .red-background {
-    background-color: red;
-  }*/
-
-  #story{
-    display:none;
+@media only screen and (min-width: 600px) {
+  .container-fluid {
+    width: 95%;
   }
+}
+
+@media only screen and (min-width: 768px) {
+  .container-fluid {
+    width: 90%;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .container-fluid {
+    width: 70%;
+  }
+}
+
+body {
+  font-family: 'Oswald', sans-serif;
+  color:#cf481f;
+}

@@ -1,18 +1,22 @@
-function Pizza(size, crust, toppings) {
-  this.size = size;
-  this.crust = crust;
-  this.toppings = toppings;
-}
+console.log('osman');
+console.log('mariam');
+console.log(69);
 
 
 
-$(document).ready(function () {
 
-  $("form#new-pizza").submit(function (event) {
-    event.preventDefault();
 
-    var crust = $("input[type=radio][name=crust]:checked").val
 
-   
-    });
+
+
+
+
+
+
+
+
+
+
   });
+
+});
